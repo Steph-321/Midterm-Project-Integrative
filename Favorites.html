@@ -3,77 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <title>Comment Cards</title>
-<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<<<<<<< Updated upstream
+    <div class="container">
 
-<div class="container">
+        <div class="card">
+            <div class="image-box">
+                <img src="images/bg1.jpg" alt="">
+                <div class="heart" onclick="toggleLike(this)">
+                    <img src="images/icon.png" class="heart-img" data-liked="false">
+                </div>
+            </div>
 
-    <div class="card">
-        <div class="image-box">
-            <img src="img1.jpg" alt="">
-            <span class="heart">♡</span>
-=======
-    <div>
-        <div id="artwork-1" class="artwork">
-            <p class="quote">"Don't just use technology - create it." <br>  "Dream in code. Build in reality."</p>
-            <div class="heart1" onclick="toggleLike(this)"><img src="images/7903403_stock-photo-abstract-it-technology-background.jpg " class="Image"> </div>
->>>>>>> Stashed changes
+            <p class="title">Comment Section</p>
+
+            <ul class="comments-list"></ul>
+            <input type="text" class="comment-input" placeholder="Add a comment...">
+            <button onclick="addcomment(this)">Post</button>
         </div>
 
-        <p class="title">Comment Section</p>
-        <input type="text" placeholder="">
-        <textarea placeholder="Add a comment..."></textarea>
 
-        <button>Post</button>
-    </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="images/bg2.jpg" alt="">
+                <div class="heart" onclick="toggleLike(this)">
+                    <img src="images/icon.png" class="heart-img" data-liked="false">
+                </div>
+            </div>
 
-
-    <div class="card">
-        <div class="image-box">
-            <img src="img2.jpg" alt="">
-            <span class="heart">♡</span>
+            <p class="title">Comment Section</p>
+            <ul class="comments-list"></ul>
+            <input type="text" class="comment-input" placeholder="Add a comment...">
+            <button onclick="addcomment(this)">Post</button>
         </div>
 
-        <p class="title">Comment Section</p>
 
-        <input type="text" placeholder="">
-        <textarea placeholder="Add a comment..."></textarea>
+        <div class="card">
+            <div class="image-box">
+                <img src="images/bg3.png" alt="">
+                <div class="heart" onclick="toggleLike(this)">
+                    <img src="images/icon.png" class="heart-img" data-liked="false">
+                </div>
+            </div>
 
-        <button>Post</button>
-    </div>
+            <p class="title">Comment Section</p>
 
-    <div class="card">
-        <div class="image-box">
-            <img src="img3.jpg" alt="">
-            <span class="heart">♡</span>
+            <ul class="comments-list"></ul>
+
+            <input type="text" class="comment-input" placeholder="Add a comment...">
+
+            <button onclick="addcomment(this)">Post</button>
         </div>
 
-        <p class="title">Comment Section</p>
 
-        <input type="text" placeholder="">
-        <textarea placeholder="Add a comment..."></textarea>
+        <div class="card">
+            <div class="image-box">
+                <img src="images/bg4.jpg" alt="">
+                <div class="heart" onclick="toggleLike(this)">
+                    <img src="images/icon.png" class="heart-img" data-liked="false">
+                </div>
+            </div>
 
-        <button>Post</button>
-    </div>
+            <p class="title">Comment Section</p>
+            
+            <ul class="comments-list"></ul>
 
-    <div class="card">
-        <div class="image-box">
-            <img src="img4.jpg" alt="">
-            <span class="heart">♡</span>
+            <input type="text" class="comment-input" placeholder="Add a comment...">
+
+            <button onclick="addcomment(this)">Post</button>
         </div>
-
-        <p class="title">Comment Section</p>
-
-        <input type="text" placeholder="">
-        <textarea placeholder="Add a comment..."></textarea>
-
-        <button>Post</button>
     </div>
-
-</div>
-
+<script src="fav.js"></script>
 </body>
 </html>

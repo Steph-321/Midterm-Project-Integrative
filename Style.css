@@ -2,13 +2,18 @@ body{
     font-family: Arial;
     margin:0;
     padding:40px;
-    background: linear-gradient(to right,#f5f5f5,#ffe0b2);
+
+    background-image: url('images/back.jpg'); 
+    background-size: cover;
+    background-position: center;
+    
 }
 
 .container{
     display:flex;
     justify-content:center;
     gap:30px;
+    flex-wrap:wrap;
 }
 
 .card{
@@ -20,7 +25,7 @@ body{
     position:relative;
 }
 
-.image-box img{
+.image-box > img{
     width:100%;
     height:300px;
     object-fit:cover;
@@ -32,10 +37,18 @@ body{
     position:absolute;
     top:10px;
     right:10px;
+    width:35px;
+    height:35px;
     background:white;
     border-radius:50%;
-    padding:5px 8px;
-    font-size:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+.heart-img{
+    width:18px;
 }
 
 .title{
@@ -67,4 +80,25 @@ button{
 
 button:hover{
     background:#ff4b4b;
+}
+
+.comments-list{
+    list-style:none;
+    padding:5px;
+    margin:5px 0;
+    max-height:120px;       
+    border:1px solid #ccc;
+    border-radius:5px;
+    overflow-y:auto;        
+    background:#f9f9f9;
+}
+
+.comments-list li{
+    padding:4px 6px;
+    border-bottom:1px solid #eee;
+    font-size:13px;
+}
+
+.comments-list li:last-child{
+    border-bottom:none;
 }

@@ -2,10 +2,10 @@ function toggleLike(element) {
     let heart =  element.querySelector("img");
 
     if (heart.dataset.liked === "true") {
-        heart.style.filter = "grayscale(100%)";
+        heart.src = "images/icon.png";
         heart.dataset.liked = "false";
     } else {
-        heart.style.filter = "invert(21%) sepia(85%) saturate(7483%) hue-rotate(358deg) brightness(91%) contrast(120%)";
+        heart.src = "images/heart-filled.png";
         heart.dataset.liked = "true";
     }
 }
