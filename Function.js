@@ -104,6 +104,7 @@ function MathOperations(button){
         case "DIVISION":
             alert("Sum: " + (num1/num2));
             break;
-        
+        default:
+            alert("INVALID INPUT")
     }
 }
