@@ -1,0 +1,49 @@
+body{
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+    justify-content: center;
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.portfolio img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.all{
+    margin-top: 200px;
+    width:500px;
+    height: 30px;
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 70px;
+  
+    
+}
+
+.longer{
+    justify-content: center;
+    width: 450px;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
