@@ -3,13 +3,13 @@ function Acceleration(button){
     let finalVelocity = parseFloat(prompt("Enter Final Velocity: "));
     let time = parseFloat(prompt("Enter time: "));
     if(isNaN(initialVelocity)){
-        alert("Invalid Input!");
+        alert("INVALID INPUT!");
         return
     }else if(isNaN(finalVelocity)){
-        alert("Invalid Input!");
+        alert("INVALID INPUT!");
         return
     }else if(isNaN(time)){
-        alert("Invalid Input!");
+        alert("INVALID INPUT!");
         return
     }else{
         alert("Acceleration is " + ((finalVelocity-initialVelocity)/time).toFixed(2));
@@ -23,17 +23,21 @@ function TempConverter(button){
 
 function LongerWord(button){
     let n = parseInt(prompt("Enter how many words you want to input: "));
-    let a = [n];
-    let current = ""
-    for(let j=0;j<n;j++){
-        a[j] = prompt("Enter Word " + (j+1) + ": ").trim();
-    }
-    for(let i=0;i<n;i++){
-        if(a[i].length>current.length){
-            current = a[i];
+    if(isNaN(n)){
+        alert("INVALID INPUT!")
+    }else{
+        let a = [n];
+        let current = ""
+        for(let j=0;j<n;j++){
+            a[j] = prompt("Enter Word " + (j+1) + ": ").trim();
         }
+        for(let i=0;i<n;i++){
+            if(a[i].length>current.length){
+                current = a[i];
+            }
+        }
+        alert("The longer word is: " + current);
     }
-    alert("The longer word is: " + current);
 }
 
 function Birthstone(button){
@@ -78,7 +82,8 @@ function Birthstone(button){
             case "december":
                 alert("Your birthstone is Blue Zircon, Turquoise, & Tanzanite!");
                 break;
-            
+            default:
+                alert("INVALID INPUT!")
         }
     }
 }
@@ -105,6 +110,6 @@ function MathOperations(button){
             alert("Sum: " + (num1/num2));
             break;
         default:
-            alert("INVALID INPUT")
+            alert("INVALID INPUT!")
     }
 }
