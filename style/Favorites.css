@@ -1,1 +1,81 @@
+/* Reset some defaults */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 20px;
+}
+
+/* Artwork card */
+.artwork {
+  position: relative;
+  width: 320px;
+  margin: 20px auto;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Quote text */
+.artwork .quote {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* Comment section styling */
+.comments-section {
+  width: 320px;
+  margin: 0 auto 30px auto;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.comments-section p {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.comments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.comments-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+  color: #555;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.comments-section button {
+
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+}
+
+.comments-section button:hover {
+  background-color: #e73370;
+}
 
