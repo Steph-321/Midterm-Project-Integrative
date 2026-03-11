@@ -14,6 +14,10 @@ body{
     margin-bottom: 5px;
 }
 
+.title h1 {
+    color: #FFF;
+}
+
 .Portfolio {
     display: flex;
     justify-content: center;
@@ -45,8 +49,8 @@ body{
     margin-right: 200px;
     cursor: pointer;
 }
-.choice li {
-    width: 370px;
+.choice button {
+    width: 600px;
     height: 70px;
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -54,15 +58,16 @@ body{
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding-left: 230px;
+    justify-content: center;
+    padding-left: 30px;
     margin-bottom: 10px;
     font-size: 18px;
     cursor: pointer;        
-    margin-left: 20px;
+    margin-left: 60px;
+    
 }
 
-.choice li:hover {
+.choice button:hover {
     background: linear-gradient(120deg, #c9a2ec, #cbd6f7);
     transform: translateY(-10px); 
     transition: transform 0.2s ease;
