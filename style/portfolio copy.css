@@ -1,0 +1,71 @@
+body{
+    font-family: 'Times New Roman';
+    margin-left: 400px;
+    justify-content: center;
+    position: relative;
+    background-image: url(../images/BG.jpg);
+    z-index: 0;
+}
+
+.title{
+    margin-left: 40px;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.Portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 10px;
+    margin-left: -400px;
+}
+
+.Portfolio img {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    object-fit: cover;  
+}
+.pick{
+    width: 370px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding-left: 230px;
+    margin-left: 59px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-right: 200px;
+    cursor: pointer;
+}
+.choice button {
+    width: 370px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 230px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;        
+    margin-left: 20px;
+}
+
+.choice button:hover {
+    background: linear-gradient(120deg, #c9a2ec, #cbd6f7);
+    transform: translateY(-10px); 
+    transition: transform 0.2s ease;
+    transform: scale(1.1);
+   
+}
