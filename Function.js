@@ -1,3 +1,5 @@
+//PORTFOLIO PAGE
+
 function Acceleration(button) {
     let initialVelocity = parseFloat(prompt("Enter Initial Velocity: "));
     let finalVelocity = parseFloat(prompt("Enter Final Velocity: "));
@@ -147,4 +149,76 @@ function BasicOperations(button) {
         default:
             alert("INVALID INPUT!")
     }
+}
+
+
+//HOME PAGE
+const carouselContainer = document.querySelector('.container');
+const dots = document.querySelectorAll('.carousel__dot');
+const totalSlides = dots.length;
+let currentSlide = 0;
+let autoSlideInterval;
+
+function goToSlide(index) {
+    currentSlide = index;
+    const offset = -index * 100;
+    carouselContainer.style.transform = `translateX(${offset}%)`;
+
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[currentSlide].classList.add('active');
+}
+
+function nextSlide() {
+    const next = (currentSlide + 1) % totalSlides;
+    goToSlide(next);
+}
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(nextSlide, 4000);
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    startAutoSlide();
+}
+
+dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+        const slideIndex = parseInt(dot.getAttribute('data-slide'), 10);
+        goToSlide(slideIndex);
+        resetAutoSlide();
+    });
+});
+
+goToSlide(0);
+startAutoSlide();
+
+//FAVORITES
+function toggleLike(element) {
+    let heart =  element.querySelector("img");
+
+    if (heart.dataset.liked === "true") {
+        heart.src = "../images/heart.jpg";
+        heart.dataset.liked = "false";
+    } else {
+        heart.src = "..images/heart-filled.png";
+        heart.dataset.liked = "true";
+    }
+}
+
+function addcomment(button){
+    let commentInput = button.previousElementSibling;
+    let commentText = commentInput.value.trim();
+    if (commentText !== "") {
+        let commentList = button.parentElement.querySelector(".comments-list");
+        let newComment = document.createElement("li");
+        newComment.textContent = commentText;
+        commentList.appendChild(newComment);
+        commentInput.value = "";
+    }
+}
+
+function openPage(url) {
+    window.open(url), '_blank';
+    self.close();
 }
