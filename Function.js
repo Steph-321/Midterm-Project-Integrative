@@ -1,51 +1,78 @@
-function Acceleration(button){
+function Acceleration(button) {
     let initialVelocity = parseFloat(prompt("Enter Initial Velocity: "));
     let finalVelocity = parseFloat(prompt("Enter Final Velocity: "));
     let time = parseFloat(prompt("Enter time: "));
-    if(isNaN(initialVelocity)){
+    if (isNaN(initialVelocity)) {
         alert("INVALID INPUT!");
         return
-    }else if(isNaN(finalVelocity)){
+    } else if (isNaN(finalVelocity)) {
         alert("INVALID INPUT!");
         return
-    }else if(isNaN(time)){
+    } else if (isNaN(time)) {
         alert("INVALID INPUT!");
         return
-    }else{
-        alert("Acceleration is " + ((finalVelocity-initialVelocity)/time).toFixed(2));
+    } else {
+        alert("Acceleration is " + ((finalVelocity - initialVelocity) / time).toFixed(2));
     }
 }
 
-function TempConverter(button){
-    let celsius = parseFloat(prompt("Enter Celsius Reading: "));
-    alert("The temperature in Fahrenheit is: "+ ((celsius * 1.8)+32).toFixed(2) + "°F");
-}
-
-function LongerWord(button){
-    let n = parseInt(prompt("Enter how many words you want to input: "));
-    if(isNaN(n)){
-        alert("INVALID INPUT!")
-    }else{
-        let a = [n];
-        let current = ""
-        for(let j=0;j<n;j++){
-            a[j] = prompt("Enter Word " + (j+1) + ": ").trim();
-        }
-        for(let i=0;i<n;i++){
-            if(a[i].length>current.length){
-                current = a[i];
-            }
-        }
-        alert("The longer word is: " + current);
+function TempConverter(button) {
+    let celsius = parseFloat(prompt("Enter Celsius: "));
+    if (isNaN(celsius)) {
+        alert("INVALID INPUT!");
+        return
+    } else {
+        let fahrenheit = (celsius * 1.8) + 32;
+        alert("The temperature in Fahrenheit is: " + fahrenheit.toFixed(2) + "°F");
     }
 }
 
-function Birthstone(button){
+// function LongerWord(button){
+//     let n = parseInt(prompt("Enter how many words you want to input: "));
+//     if(isNaN(n)){
+//         alert("INVALID INPUT!")
+//     }else{
+//         let a = [n];
+//         let current = ""
+//         for(let j=0;j<n;j++){
+//             a[j] = prompt("Enter Word " + (j+1) + ": ").trim();
+//         }
+//         for(let i=0;i<n;i++){
+//             if(a[i].length>current.length){
+//                 current = a[i];
+//             }
+//         }
+//         alert("The longer word is: " + current);
+//     }
+// }
+
+function LongerWord(button) {
+    let w1 = prompt("Enter Word 1: ");
+    if (!isNaN(w1)) {
+        alert("Invalid!");
+        return;
+    }
+    let w2 = prompt("Enter Word 2: ");
+    if (!isNaN(w2)) {
+        alert("Invalid!");
+        return;
+    }
+
+    if (w1.length > w2.length) {
+        alert("Word 1 is Longer: " + w1);
+    } else if (w1.length < w2.length) {
+        alert("Word 2 is Longer: " + w2);
+    } else {
+        alert("Both Word are Equal!");
+    }
+}
+
+function Birthstone(button) {
     let birthmonth = prompt("Enter your birthmonth: ").trim().toLowerCase();
-    if(!isNaN(birthmonth)){
+    if (!isNaN(birthmonth)) {
         alert("Invalid Input!")
-    }else{
-        switch(birthmonth){
+    } else {
+        switch (birthmonth) {
             case "january":
                 alert("Your birthstone is Garnet!");
                 break;
@@ -88,26 +115,34 @@ function Birthstone(button){
     }
 }
 
-function MathOperations(button){
-    let num1 = parseInt(prompt("Enter number (1): "));
-    let num2 = parseInt(prompt("Enter number (2): "));
-    let operator = prompt("Enter Math Operator/Operation: ").trim().toUpperCase();
-    switch(operator){
+function BasicOperations(button) {
+    let num1 = parseInt(prompt("Enter number 1: "));
+    if (isNaN(num1)) {
+        alert("INVALID INPUT!");
+        return
+    }
+    let num2 = parseInt(prompt("Enter number 2: "));
+    if (isNaN(num2)) {
+        alert("INVALID INPUT!");
+        return
+    }
+    let operator = prompt("Enter Operation: ").trim().toUpperCase();
+    switch (operator) {
         case "+":
         case "ADDITION":
-            alert("Sum: " + (num1+num2));
+            alert("Sum: " + (num1 + num2));
             break;
         case "-":
         case "SUBTRACTION":
-            alert("Sum: " + (num1-num2));
+            alert("Sum: " + (num1 - num2));
             break;
         case "*":
         case "MULTIPLICATION":
-            alert("Sum: " + (num1*num2));
+            alert("Sum: " + (num1 * num2));
             break;
         case "/":
         case "DIVISION":
-            alert("Sum: " + (num1/num2));
+            alert("Sum: " + (num1 / num2));
             break;
         default:
             alert("INVALID INPUT!")

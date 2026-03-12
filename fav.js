@@ -2,10 +2,10 @@ function toggleLike(element) {
     let heart =  element.querySelector("img");
 
     if (heart.dataset.liked === "true") {
-        heart.src = "images/icon.png";
+        heart.src = "../images/icon.png";
         heart.dataset.liked = "false";
     } else {
-        heart.src = "images/heart-filled.png";
+        heart.src = "..images/heart-filled.png";
         heart.dataset.liked = "true";
     }
 }

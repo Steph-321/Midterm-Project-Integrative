@@ -5,29 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../styles/portfolio.css">
-</head>
+    </head>
 <body>
-    <div class="title">
-        <h1>FUNCTION INTEGRATION</h1>
-    </div>
-    
-    <div class="Portfolio">    
-        <img src="../images/kamot.png" alt="Portfolio Image">
-    </div>
+    <nav class="nav">
+        <div class="logo">
+            <p class="logo__text">INTEGRATIVE PROGRAMMING</p>
+        </div>
+        <ul class="navLinks">
+            <li><a href="../pages/home.html">Home</a></li> 
+            <li><a href="../pages/portfolio.html">Portfolio</a></li>
+            <li><a href="../pages/Favorites.html">Favorites</a></li>
+        </ul>
+    </nav>
 
-    <div class="pick">
-        <p>Pick your choice: </p>
-    </div>
-    
-    <div class="choice">
-    
-        <button onclick="Acceleration(this)">Acceleration Computer</button>
-        <button onclick="LongerWord(this)">Longer Word</button>
-        <button onclick="Birthstone(this)">Birthstone</button>
-        <button onclick="MathOperations(this)">Math Operations</button>
-        <button onclick="TempConverter(this)">Temperature Converter</button>
-    </div>
+    <main class="page-wrapper">
+        <div class="title">
+            <h1><span>Function</span> Integration</h1>
+        </div>
+        
+        <div class="Portfolio">    
+            <img src="../images/kamot.png" alt="Portfolio Image">
+        </div>
 
-    <script src = "../Function.js"></script>
+        <section class="panel">
+            <div class="pick">
+                <p>Pick your choice</p>
+            </div>
+            
+            <div class="choice">
+                <button onclick="TempConverter(this)"><span>Temperature Converter</span></button>
+                <button onclick="LongerWord(this)"><span>The Longer Word</span></button>
+                <button onclick="Birthstone(this)"><span>Know My Birthstone</span></button>
+                <button onclick="BasicOperations(this)"><span>Basic Operations</span></button>
+                <button onclick="Acceleration(this)"><span>Compute for Acceleration</span></button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../Function.js"></script>
 </body>
 </html>
