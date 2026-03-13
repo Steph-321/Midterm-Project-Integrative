@@ -200,9 +200,11 @@ function toggleLike(element) {
     if (heart.dataset.liked === "true") {
         heart.src = "../images/heart.png";
         heart.dataset.liked = "false";
+        element.classList.remove("liked");
     } else {
         heart.src = "../images/heart-filled.png";
         heart.dataset.liked = "true";
+        element.classList.add("liked");
     }
 }
 
