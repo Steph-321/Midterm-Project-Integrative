@@ -2,15 +2,17 @@
 
 function Acceleration(button) {
     let initialVelocity = parseFloat(prompt("Enter Initial Velocity: "));
-    let finalVelocity = parseFloat(prompt("Enter Final Velocity: "));
-    let time = parseFloat(prompt("Enter time: "));
     if (isNaN(initialVelocity)) {
         alert("INVALID INPUT!");
         return
-    } else if (isNaN(finalVelocity)) {
+    }
+    let finalVelocity = parseFloat(prompt("Enter Final Velocity: "));
+    if (isNaN(finalVelocity)) {
         alert("INVALID INPUT!");
         return
-    } else if (isNaN(time)) {
+    }
+    let time = parseFloat(prompt("Enter time: "));
+    if (isNaN(time)) {
         alert("INVALID INPUT!");
         return
     } else {
