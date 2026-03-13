@@ -551,12 +551,10 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Optional zoom on hover */
 .image-box:hover > img {
     transform: scale(1.03);
 }
 
-/* Bottom overlay (partial blur) */
 .image-box .bottom-overlay {
     position: absolute;
     bottom: 0;
@@ -575,7 +573,7 @@ body {
     overflow: hidden;
     opacity: 0; /* start hidden */
     transition: opacity 0.3s ease;
-    pointer-events: none; /* heart still clickable */
+    pointer-events: none; /* heart stillll clickable */
 }
 
 .image-box:hover .bottom-overlay {
