@@ -31,25 +31,6 @@ function TempConverter(button) {
     }
 }
 
-// function LongerWord(button){
-//     let n = parseInt(prompt("Enter how many words you want to input: "));
-//     if(isNaN(n)){
-//         alert("INVALID INPUT!")
-//     }else{
-//         let a = [n];
-//         let current = ""
-//         for(let j=0;j<n;j++){
-//             a[j] = prompt("Enter Word " + (j+1) + ": ").trim();
-//         }
-//         for(let i=0;i<n;i++){
-//             if(a[i].length>current.length){
-//                 current = a[i];
-//             }
-//         }
-//         alert("The longer word is: " + current);
-//     }
-// }
-
 function LongerWord(button) {
     let w1 = prompt("Enter Word 1: ");
     if (!isNaN(w1)) {
